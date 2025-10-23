@@ -77,7 +77,8 @@ fun ActivitesPertama(modifier: Modifier){
 
     ){
         Text(
-            stringResource()
+            stringResource(R.string.copy),
+
         )
     }
 }
