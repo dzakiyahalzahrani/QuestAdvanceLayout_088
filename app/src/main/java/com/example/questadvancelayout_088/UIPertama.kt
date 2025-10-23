@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
@@ -53,14 +54,14 @@ fun ActivitesPertama(modifier: Modifier){
                 Spacer(modifier = Modifier.width(30.dp))
                 Column() {
                     Text(
-                        stringResource(R.string.nama),
+                        stringResource(R.string.namabox1),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
                         modifier = Modifier.padding(top=15.dp)
                     )
                     Text(
-                        stringResource(R.string.alamat),
+                        stringResource(R.string.alamatbox1),
                         fontSize = 20.sp,
                         color = Color.Yellow,
                         modifier = Modifier.padding(top=10.dp)
@@ -68,6 +69,83 @@ fun ActivitesPertama(modifier: Modifier){
                 }
             }
         }
+
+        Card(modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue
+            )){
+            Row() {
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription  = null,
+                    modifier = Modifier.size(110.dp).padding(10.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.namabox2),
+                        fontSize = 27.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=5.dp)
+                    )
+                    Text(
+                        stringResource(R.string.nomorbox2),
+                        fontSize = 20.sp,
+                        color = Color.Cyan,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamatbox2),
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+                }
+            }
+        }
+
+        Card(modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = colorResource(id = R.color.dark_green)
+            )){
+            Row() {
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription  = null,
+                    modifier = Modifier.size(110.dp).padding(10.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.namabox3),
+                        fontSize = 27.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=5.dp)
+                    )
+                    Text(
+                        stringResource(R.string.nomorbox3),
+                        fontSize = 20.sp,
+                        color = Color.Cyan,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamatbox3),
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+                }
+            }
+        }
+
 
 
     }
