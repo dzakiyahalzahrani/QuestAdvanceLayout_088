@@ -72,7 +72,7 @@ fun ActivitesPertama(modifier: Modifier){
 
     }
     Box(
-
+        modifier = Modifier
     )
 }
 
