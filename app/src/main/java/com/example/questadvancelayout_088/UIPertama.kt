@@ -2,6 +2,7 @@ package com.example.questadvancelayout_088
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -41,7 +42,7 @@ fun ActivitesPertama(modifier: Modifier){
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
             )){
-            Bow() {
+            Row() {
                 val gambar = painterResource(R.drawable.Logo_UMY)
                 Image(
                     painter = gambar,
@@ -69,8 +70,6 @@ fun ActivitesPertama(modifier: Modifier){
     }
 }
 
-@Composable
-fun Bow(content: @Composable () -> Unit) {
-    TODO("Not yet implemented")
-}
+
+
 
